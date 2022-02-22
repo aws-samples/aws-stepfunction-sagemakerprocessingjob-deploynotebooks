@@ -1,0 +1,8 @@
+subnets:
+    -  subnet-0d11a88d30f367676
+security_groups:
+    - sg-03835737909014878
+volume_size: 20
+instance_type: ml.c4.2xlarge
+max_runtime: 3600
+
