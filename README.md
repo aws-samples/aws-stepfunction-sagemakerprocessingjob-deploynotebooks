@@ -1,12 +1,12 @@
 # aws-stepfunctions-sagemakerprocessingjob
 
-Jupyter notebooks are widely used by Datascientists for their data transformation workloads. There are scenarios where the notebook needs to be scheduled and run in regular interval and they need to be productionize. 
+Jupyter notebooks are widely used by data scientists for their data transformation workloads. There are scenarios where the notebook needs to be scheduled and run in regular interval and they need to be productionize. 
 
-This repo provides a framework for the Datascientists to productionize their workloads dynamically (based on the notebooks) using AWS Stepfunctions with Service Integration to Sagemaker Processing Job.
+This repo provides a framework for the data scientists to productionize their workloads dynamically (based on the notebooks) using AWS Step Functions with Service Integration to Sagemaker Processing Job.
 
-As a Data Scientist or Developer, you need to concentrate on developing the notebooks. The framework will help to productionize the notebooks using Stepfunctions as an orchestrator to execute your notebooks in Sagemaker Processing Job.
+As a data scientist or developer, you need to concentrate on developing the notebooks. The framework will help to productionize the notebooks using AWS Step Functions as an orchestrator to execute your notebooks in Sagemaker Processing Job.
 
-The repo is a template which you need to use and replace the notebooks with your notebooks and update the simple configuration file config.yml file. Based on the config.yml details, the stepfunctions with states for Sagemaker processing job for each notebook under src/notebooks is dynamically and programmatically created.
+The repo is a template which you need to use and replace the notebooks with your notebooks and update the simple configuration file config.yml file. Based on the config.yml details, the Step Functions with states for Sagemaker processing job for each notebook under src/notebooks is dynamically and programmatically created.
 
 
 ## Pre-requisites:
@@ -22,7 +22,7 @@ The repo is a template which you need to use and replace the notebooks with your
 ## Usage
 To try out the framework and see its work in action, do the following:
 
-1. Clone the repo. **git clone https://gitlab.aws.dev/govindhi/aws-stepfunctions-sagemakerprocessingjob-dynamicinput.git**
+1. Clone the repo. **git clone https://github.com/aws-samples/aws-stepfunction-sagemakerprocessingjob-deploynotebooks.git**
 2. cd aws-stepfunctions-sagemakerprocessingjob-dynamicinput
 3. Update the config.yml accordingly.
 4. Create virtual env using the command,  **python3 -m venv venv**
@@ -31,7 +31,7 @@ To try out the framework and see its work in action, do the following:
 7. Set the environment variables Example: export AWS_DEFAULT_REGION=us-west-1, export AWS_ACCESS_KEY_ID=your access key id, export AWS_SECRET_ACCESS_KEY=your access key
 8. Provide executable permission , **chmod +x deploy.sh** 
 9. Execute script **./deploy.sh**
-10. Login to the AWS Console, Goto Step functions, Statemachines. You would be able to see state machine created dynamically based on the information from config.yml. 
+10. Login to the AWS Console, Goto Step Functions, Statemachines. You would be able to see state machine created dynamically based on the information from config.yml. 
 
 ## User-Experience
 
