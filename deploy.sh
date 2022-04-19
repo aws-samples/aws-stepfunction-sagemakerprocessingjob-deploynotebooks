@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e
+
 # Create Roles and ECR Repo
 sam package --template-file template.yml --output-template-file packaged.yaml --force-upload --region us-west-1 --s3-bucket dev
 
