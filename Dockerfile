@@ -8,8 +8,8 @@ RUN python3 -m pip install \
         boto3==1.17.84 \
         PyYAML==5.4.1 \
         requests==2.26.0 \
-        nbconvert==6.1.0 \
-        nbformat==5.1.3 \
+        nbconvert==6.5.0 \
+        nbformat==5.3.0 \
         ipython==7.25.0
  
 RUN python3 -m pip install \
